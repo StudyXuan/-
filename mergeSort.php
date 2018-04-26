@@ -1,5 +1,5 @@
 <?php
-$arr = array(2,3,1,7,9,5,8,3,4,6);
+$arr = array(2,3,1,7,9,5,8,3,4,6,324,2,1,5,3,3,2,25,5123,4);
 $l = 0;
 $r = count($arr)-1;
 mergeSort($arr,$l,$r);
@@ -20,18 +20,18 @@ function merge(array &$arr,$l,$m,$r){
 
   while ($p2 <= $r)
     $help[$i++] = $arr[$p2++];
-    
+
   for ($i=0; $i < count($help); $i++)
     $arr[$l + $i] = $help[$i];
 }
 
 function mergeSort(array &$arr,$l,$r){
-  if ($r > $l) {
-    $mid = $l + (($r - $l)/2);
+  if ($r == $l)
+    return ;
+    $mid = $l + (($r - $l) >> 1);
     mergeSort($arr,$l,$mid);
     mergeSort($arr,$mid+1,$r);
     merge($arr,$l,$mid,$r);
-  }
 }
 
 for ($i=0; $i < count($arr); $i++) {
