@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>欢迎来到校团委网络文化节</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>欢迎来到沈阳工业大学网络文化节</h3>
+                            		<p>请填写您的报名信息</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-key"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form role="form" action="insert.php" method="post" class="login-form">
+                            <div class="form-group">
+			                    		<label for="number">学号</label>
+			                        	<input type="text" name="number" placeholder="请输入学号" class="form-username form-control" id="number">
+			                        </div>
+			                    	<div class="form-group">
+			                    		<label for="name">姓名</label>
+			                        	<input type="text" name="name" placeholder="请输入姓名" class="form-username form-control" id="name">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label>性别</label>
+			                        	<input type="radio" name="sex" value="男">男
+                                <input type="radio" name="sex" value="女">女
+			                        </div>
+                              <div class="form-group">
+                                <label>学院</label>
+  			                    		<select class="form-control" name="academic">
+                                  <option value="机械工程学院">机械工程学院</option>
+                                  <option value="材料科学与工程学院">材料科学与工程学院</option>
+                                  <option value="电气工程学院">电气工程学院</option>
+                                  <option value="信息科学与工程学院">信息科学与工程学院</option>
+                                  <option value="经济学院">经济学院</option>
+                                  <option value="管理学院">管理学院</option>
+                                  <option value="理学院">理学院</option>
+                                  <option value="建筑与土木工程学院">建筑与土木工程学院</option>
+                                  <option value="文法学院">文法学院</option>
+                                  <option value="外国语学院">外国语学院</option>
+                                  <option value="软件学院">软件学院</option>
+                                  <option value="国际教育学院">国际教育学院</option>
+                                </select>
+  			                        </div>
+                                <div class="form-group">
+    			                    		<label for="class">专业班级</label>
+                                  <input type="text" name="class" placeholder="请输入专业班级" class="form-username form-control" id="class">
+    			                        </div>
+                                  <div>
+      			                    		<label>报名项目（单选）</label>
+      			                        </div>
+                                    <div class="form-group">
+                                      <input type="radio" name="competition" value="网页设计大赛">网页设计大赛
+                                      <input type="radio" name="competition" value="视频制作大赛">视频制作大赛
+                                      <input type="radio" name="competition" value="PPT演讲大赛">PPT演讲大赛
+                                      <input type="radio" name="competition" value="Logo设计大赛">Logo设计大赛
+                                    </div>
+                                    <div>
+        			                    		<label>培训项目（可多选）</label>
+        			                        </div>
+                                      <div class="form-group">
+                                        <input type="checkbox" name="ps" value="PS图片编辑">PS图片编辑
+                                        <input type="checkbox" name="video" value="视频剪辑技术">视频剪辑技术
+                                        <input type="checkbox" name="html" value="html网页设计">html网页设计
+                                      </div>
+                                      <div class="form-group">
+          			                    		<label for="phone">手机号</label>
+                                        <input type="text" name="phone" placeholder="请输入手机号" class="form-username form-control" id="phone">
+          			                        </div>
+                                        <div class="form-group">
+            			                    		<label for="qq">QQ号</label>
+                                          <input type="text" name="qq" placeholder="请输入QQ号" class="form-username form-control" id="qq">
+            			                        </div>
+			                        <button type="submit" class="btn">立刻报名</button>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
